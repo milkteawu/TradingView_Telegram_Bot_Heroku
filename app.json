@@ -1,0 +1,21 @@
+{
+    "name": "TradingView_Webhook_Bot",
+    "description": "Deploy a Bot to send TradingView alerts to your Telegram channel via Webhook",
+    "repository": "https://github.com/milkteawu/TradingView-Webhook-Bot.git",
+    "keywords": ["Python", "Heroku", "TradingView", "Telegram", "alerts","Webhook"],
+    "env": {
+      "send_telegram_alerts":{
+        "description": "True/False"
+      },
+      "sec_key":{
+        "description": "Can be anything. Has to match with key in your TradingView alert message"
+      },
+      "tg_token": {
+        "description": "Bot token. Get it from @Botfather"
+      },
+      "channel": {
+        "description": "Channel ID (ex. -1001487568087)"
+      }
+    },
+    "addons": ["scheduler"]
+  }

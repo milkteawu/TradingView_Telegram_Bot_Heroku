@@ -13,6 +13,5 @@
       "channel": {
         "description": "Channel ID (ex. -1001487568087)"
       }
-    },
-    "addons": ["scheduler"]
+    }
   }

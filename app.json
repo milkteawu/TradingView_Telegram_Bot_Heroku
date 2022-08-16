@@ -4,9 +4,6 @@
     "repository": "https://github.com/milkteawu/TradingView-Webhook-Bot.git",
     "keywords": ["Python", "Heroku", "TradingView", "Telegram", "alerts","Webhook"],
     "env": {
-      "send_telegram_alerts":{
-        "description": "True/False"
-      },
       "sec_key":{
         "description": "Can be anything. Has to match with key in your TradingView alert message"
       },

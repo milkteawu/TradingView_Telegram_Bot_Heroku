@@ -20,19 +20,18 @@ def get_timestamp():
 
 def send_alert(data):
     msg = data["msg"].encode("latin-1", "backslashreplace").decode("unicode_escape")+"\n"+get_timestamp()
-    if os.environ.get("send_telegram_alerts"):
-        tg_bot = Bot(token=os.environ.get("tg_token"))
-        try:
-            tg_bot.sendMessage(
-                data["telegram"],
-                msg,
-                parse_mode="MARKDOWN",
-            )
-        except KeyError:
-            tg_bot.sendMessage(
-                os.environ.get("channel"),
-                msg,
-                parse_mode="MARKDOWN",
-            )
-        except Exception as e:
-            print("[X] Telegram Error:\n>", e)
+    tg_bot = Bot(token=os.environ.get("tg_token"))
+    try:
+        tg_bot.sendMessage(
+            data["telegram"],
+            msg,
+            parse_mode="MARKDOWN",
+        )
+    except KeyError:
+        tg_bot.sendMessage(
+            os.environ.get("channel"),
+            msg,
+            parse_mode="MARKDOWN",
+        )
+    except Exception as e:
+        print("[X] Telegram Error:\n>", e)

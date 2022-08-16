@@ -35,8 +35,10 @@ def webhook():
         print("[X]", get_timestamp(), "Error:\n>", e)
         return "Error", 400
 
+def get_port():
+  return int(os.environ.get("PORT", 5000))
 
 if __name__ == "__main__":
     from waitress import serve
 
-    serve(app, host="0.0.0.0", port=80)
+    serve(app, host="0.0.0.0", port=get_port())

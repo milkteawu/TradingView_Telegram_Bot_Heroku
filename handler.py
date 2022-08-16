@@ -19,7 +19,7 @@ def get_timestamp():
     return timestamp
 
 def send_alert(data):
-    msg = data["msg"].encode("latin-1", "backslashreplace").decode("unicode_escape")
+    msg = data["msg"].encode("latin-1", "backslashreplace").decode("unicode_escape")+"\n"+get_timestamp()
     if os.environ.get("send_telegram_alerts"):
         tg_bot = Bot(token=os.environ.get("tg_token"))
         try:

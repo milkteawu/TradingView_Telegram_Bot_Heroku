@@ -10,12 +10,6 @@ from handler import *
 
 app = Flask(__name__)
 
-
-def get_timestamp():
-    timestamp = time.strftime("%Y-%m-%d %X")
-    return timestamp
-
-
 @app.route("/webhook", methods=["POST"])
 def webhook():
     try:

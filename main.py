@@ -4,7 +4,6 @@
 # File Name             : main.py                 #
 # ----------------------------------------------- #
 
-import time
 from flask import Flask, request
 from handler import *
 

@@ -14,7 +14,6 @@ import os
 from datetime import datetime, timezone, timedelta
 
 def get_timestamp():
-    # timestamp = time.strftime("%Y-%m-%d %X")
     tz = timezone(timedelta(hours=+8))
     timestamp = str(datetime.now(tz))[:19]
     return timestamp
@@ -27,14 +26,12 @@ def send_alert(data):
             tg_bot.sendMessage(
                 data["telegram"],
                 msg,
-                get_timestamp(),
                 parse_mode="MARKDOWN",
             )
         except KeyError:
             tg_bot.sendMessage(
                 os.environ.get("channel"),
                 msg,
-                get_timestamp(),
                 parse_mode="MARKDOWN",
             )
         except Exception as e:

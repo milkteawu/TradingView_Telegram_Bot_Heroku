@@ -1,19 +1,19 @@
 # TradingView_Telegram_Bot
 
 ## Summary
----
+
 An automated script to send TradingView alerts to Telegram via webhook.
 
 All the deployment is done in one click with heroku.
 
 ## Deploy
----
+
 1. Deploy to Heroku 
 
    [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 2. Setup `channel`、`sce_key` and `tg_token`
-<img src="https://imgur.com/a/bnqylc3" width="600px">
+<img src="https://i.imgur.com/oeeuN2V.png" width="600px">
     * channel : Telegram Channel ID. If occur the error "Chat not found" try to add "-100" prefix
     * sce_key : Can be any thing. For security check. Only messeage with correct key will send. 
     * tg_token : The API key of your telegram bot.
@@ -21,7 +21,7 @@ All the deployment is done in one click with heroku.
 3. All set!
 
 ## Use
----
+
 1. Get your Web address from Heroku
 
     Settings -> Domains
@@ -54,4 +54,5 @@ All the deployment is done in one click with heroku.
     By the way, if you want to test with postman, Post with example as body to your address.
 
 ## Credit
+
 Modify from repo [fabston/TradingView-Webhook-Botgit](https://github.com/fabston/TradingView-Webhook-Bot)

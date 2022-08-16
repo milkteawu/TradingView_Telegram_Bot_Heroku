@@ -1,6 +1,6 @@
 {
     "name": "TradingView_Webhook_Bot",
-    "description": "Deploy a Bot to send TradingView alerts to your Telegram channel via Webhook",
+    "description": "Deploy a Bot to send TradingView Webhook alerts to Telegram channel via Heroku",
     "repository": "https://github.com/milkteawu/TradingView-Webhook-Bot.git",
     "keywords": ["Python", "Heroku", "TradingView", "Telegram", "alerts","Webhook"],
     "env": {

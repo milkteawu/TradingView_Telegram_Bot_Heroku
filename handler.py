@@ -14,12 +14,12 @@ import os
 from datetime import datetime, timezone, timedelta
 
 def get_timestamp():
-    tz = timezone(timedelta(hours=+8))
+    tz = timezone(timedelta(hours=0)) # +8
     timestamp = str(datetime.now(tz))[:19]
     return timestamp
 
 def send_alert(data):
-    msg = data["msg"].encode("latin-1", "backslashreplace").decode("unicode_escape")+"\n"+get_timestamp()
+    msg = data["msg"].encode("latin-1", "backslashreplace").decode("unicode_escape") #+"\n"+get_timestamp()
     tg_bot = Bot(token=os.environ.get("tg_token"))
     try:
         tg_bot.sendMessage(

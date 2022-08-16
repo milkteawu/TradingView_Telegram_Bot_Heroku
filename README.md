@@ -1,4 +1,4 @@
-# TradingView_Telegram_Bot
+# TradingView_Telegram_Bot(Heroku)
 
 ## Summary
 

@@ -16,7 +16,7 @@ from datetime import datetime, timezone, timedelta
 def get_timestamp():
     # timestamp = time.strftime("%Y-%m-%d %X")
     tz = timezone(timedelta(hours=+8))
-    timestamp = datetime.strptime(str(datetime.now(tz))[:19], "%Y-%m-%dT%H:%M:%S")
+    timestamp = str(datetime.now(tz))[:19]
     return timestamp
 
 def send_alert(data):

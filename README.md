@@ -14,11 +14,12 @@ All the deployment is done in one click with heroku.
 
 2. Setup `channel`、`sce_key` and `tg_token`
 <img src="https://i.imgur.com/oeeuN2V.png" width="600px">
-    * channel : Telegram Channel ID. If occur the error "Chat not found" try to add "-100" prefix
     
-    * sce_key : Can be any thing. For security check. Only messeage with correct key will send. 
+  ⋅⋅⋅*channel : Telegram Channel ID. If occur the error "Chat not found" try to add "-100" prefix
     
-    * tg_token : The API key of your telegram bot.
+  ⋅⋅⋅*sce_key : Can be any thing. For security check. Only messeage with correct key will send. 
+    
+  ⋅⋅⋅*tg_token : The API key of your telegram bot.
 
 3. All set!
 

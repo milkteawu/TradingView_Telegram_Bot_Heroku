@@ -28,6 +28,17 @@ def webhook():
         print("[X]", get_timestamp(), "Error:\n>", e)
         return "Error", 400
 
+@app.route("/test", methods=["GET"])
+def test():
+    try:
+        if request.method == "GET":
+            print(get_timestamp(), "Test Successful!")
+            return "Test Successful!", 200
+
+    except Exception as e:
+        print("[X]", get_timestamp(), "Error:\n>", e)
+        return "Error", 400
+
 def get_port():
   return int(os.environ.get("PORT", 5000))
 

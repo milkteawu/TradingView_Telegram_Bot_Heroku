@@ -58,7 +58,7 @@ All the deployment is done in one click with heroku.
 
 ## Optimize
 
-  Heroku's free dyno will turn to idle after 30mins from the last request,and the restart will lead a 30s delay.
+  Heroku's free dyno will turn to idle after 30mins from the last request, and the restart will lead a 30s delay.
   
   We can easily use [UptimeRobot](https://uptimerobot.com/) to send requests every 15min.
   

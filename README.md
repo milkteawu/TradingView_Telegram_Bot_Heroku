@@ -56,6 +56,12 @@ All the deployment is done in one click with heroku.
 
     By the way, if you want to test with postman, Post with example as body to your address.
 
+## Optimize
+
+  Heroku's free dyno will turn to idle after 30mins from the last request,and the restart will lead a 30s delay.
+  We can easily use [UptimeRobot](https://uptimerobot.com/) to send requests every 15min. (Free plan is enough)
+  Set this URL on UptimeRobot: https://xxxxxxx.herokuapp.com/test
+
 ## Credit
 
 Modify from repo [fabston/TradingView-Webhook-Botgit](https://github.com/fabston/TradingView-Webhook-Bot)

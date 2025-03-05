@@ -2,9 +2,9 @@
 
 ## Summary
 
-An automated script to send TradingView alerts to Telegram via webhook.
+An automated script that sends TradingView alerts to Telegram via webhook.
 
-All the deployment is done in one click with heroku.
+The entire deployment can be done with a single click using Heroku.
 
 ## Deploy
 
@@ -12,12 +12,12 @@ All the deployment is done in one click with heroku.
 
    [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-2. Setup `channel`、`sce_key` and `tg_token`
+2. Setup `channel`、`sec_key` and `tg_token`
 <img src="https://i.imgur.com/oeeuN2V.png" width="600px">
     
     - channel : Telegram Channel ID. If occur the error "Chat not found" try to add "-100" prefix
     
-    - sce_key : Can be any thing. For security check. Only messeage with correct key will send. 
+    - sce_key : Can be any thing. For security check. Only messeage with correct key will be send. 
     
     - tg_token : The API key of your telegram bot.
 
@@ -38,7 +38,7 @@ All the deployment is done in one click with heroku.
     Example : 
     ```
     {
-      "key" : "sce_key",
+      "key" : "sec_key",
       "msg" : "msg you want to send"
     } 
     ```
@@ -47,7 +47,7 @@ All the deployment is done in one click with heroku.
 
     ```
     {
-      "key" : "sce_key",
+      "key" : "sec_key",
       "telegram" : "Channel ID",
       "msg" : "msg you want to send"
     } 
@@ -58,7 +58,7 @@ All the deployment is done in one click with heroku.
 
 ## Optimize
 
-  Heroku's free dyno will turn to idle after 30min from the last request, and the restart will lead a 30s delay.
+  Heroku’s free dyno goes idle after 30 minutes of inactivity, causing a 30-second delay upon restart.
   
   We can easily use [UptimeRobot](https://uptimerobot.com/) to send requests every 15min.
   

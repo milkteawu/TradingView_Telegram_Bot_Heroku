@@ -10,7 +10,7 @@ The entire deployment can be done with a single click using Heroku.
 
 1. Deploy to Heroku 
 
-   [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+   [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/milkteawu/TradingView_Telegram_Bot_Heroku)
 
 2. Setup `channel`、`sec_key` and `tg_token`
 <img src="https://i.imgur.com/oeeuN2V.png" width="600px">
